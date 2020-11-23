@@ -1,0 +1,202 @@
+<html>
+<head>
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+/* 
+#goggles {
+    
+    margin-top: 300px;
+    background-image: url("Images/goggles2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 850px; 
+    width: 100%;
+    height: 0;
+    padding-top: 50%  
+    
+     
+}
+*/
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+#VRgoggles{
+
+    position: absolute;
+    left: 0%; 
+    right: 0%;
+    z-index: 9999;
+    width: 100%;
+    height: 70%; 
+  
+
+}
+
+#videoLeft {
+    position: absolute;
+    top: 20%;
+    right: 45%;
+    width: 60%;
+    height: 70%;
+  
+    
+}
+
+#videoRight {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 60%;
+    height: 60%;
+ 
+}
+
+#lightBack {
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+#darkBack {
+    overflow-x: hidden;
+
+    width: auto;
+}
+
+#galleryImg {
+    width: 100%;
+    height: 100%
+}
+
+h1 {
+    font-size: 72px;
+}
+
+td {
+    padding: 25px;
+    width: 50%;
+}
+
+#logoHome {
+    width: 45%;
+    padding-bottom: 200px;
+    
+}
+
+#slogan {
+    padding-top: 500px;
+}
+
+</style>
+
+
+<body>
+
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+
+    <div class="topnav">
+        <ul id="ulNavbar"> 
+            <li id="liNavbar">
+                <a href="Home.html"><img id="logo" src="Images/TexturiaLogo.png"></a>
+            </li>
+          <li id="liNavbar"class="dropdown">
+            <a href="javascript:void(0)"class="dropbtn">Gallery</a>
+                <div class="dropdown-content">
+                    <a href="Gallery.html">VR Games</a>
+                    <a href="Gallery.html#videoGames">Video Games</a>
+                    <a href="Gallery.html#customGames">Custom Games</a>
+                </div>
+         </li>
+         <li id="liNavbar"><a href="Features.html">Features</a></li>	
+         <li id="liNavbar"><a href="Pricing.html">Pricing</a></li>
+            <li id="liNavbar"><a href="Team.htm">Team</a></li>	
+         
+        </ul>
+    
+    </div>
+
+
+    <center><div >
+   
+        <div id="pageStart">
+        </div>
+
+    <div id="darkBack" >
+        <div id="goggles">
+            <img id="VRgoggles" src="Images/goggles3.png">
+            <div id="goggleVideo">
+            <video id="videoLeft" width="320" height="240" autoplay muted>
+                <source src="Videos/rollerCoaster1.mp4" type="video/mp4">
+            </video>
+            </div>
+
+            <div id="goggleVideo">
+            <video id="videoRight" width="320" height="240" autoplay muted>
+                <source src="Videos/rollerCoaster2.mp4" type="video/mp4">
+            </video>
+            </div>
+        </div>
+
+        <br><br><br>
+        <br><br><br>
+        <h1 id="slogan">Experience a new reality </h1>
+        <img src="Images/TexturiaLogo.png" id="logoHome">
+
+    </div>
+    
+
+
+   
+        
+    
+
+    <br>
+    <br>
+    <div id="darkBack">
+        <table>
+            <tr>
+                <td><img id="galleryImg" src="Images/street2.jpg"></td>
+                <td><img id="galleryImg" src="Images/street.jpg"></td>
+            </tr>
+            <tr>
+                <td><center>Typical Gaming Experience</center></td>
+                <td><center>Texturia-improved Gaming Experience</center></td>
+            </tr>
+        </table>
+    
+        <br><br>
+
+        <button onclick="openFeatures()">FIND OUT HOW</button>
+        
+
+    </div>
+    <footer>
+        <p> © 2020 Texturia. All right reserved. <br> Texturia and the Texturia logo are registered trademarks of Texturia. <br>
+            <a id="copyright" href="Terms of Use.pdf" target="_blank">Terms of Use</a>  <a id="copyright" href="Privacy Policy.pdf" target="_blank">Privacy Policy.</a> </p>
+    </footer>
+
+    <br><br>
+
+    </div></center>
+<script>
+    function openFeatures(){
+        window.open(
+        "Features.html",
+        "_blank"
+	    )	
+    }
+    
+</script>
+</body>
+
+
+</html>

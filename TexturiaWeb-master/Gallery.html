@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link rel="stylesheet" type="text/css" href="navbar.css">	
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">	
+    
+<title>Gallery</title>
+
+<style>
+#darkBack, #lightBack {
+    width: 100%
+}
+
+
+#galleryImg {
+	height: 100%;
+	width: 100%;
+}
+
+.gallerySection {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+
+td {
+    padding: 25px;
+    width: 50%;
+    
+}
+
+#tdDark {
+    color:  #e0e0e0;
+}
+
+#tdLight {
+    color:  #19191a;;
+}
+
+p, #setText {
+    font-size:  18px;
+}
+
+</style>
+
+</head>
+
+<div class="topnav">
+    <ul id="ulNavbar"> 
+        <li id="liNavbar">
+            <a href="home.html"><img id="logo" src="Images/TexturiaLogo.png"></a>
+        </li>
+      <li id="liNavbar"class="dropdown">
+        <a href="javascript:void(0)"class="dropbtn">Gallery</a>
+            <div class="dropdown-content">
+                <a href="gallery.html">VR Games</a>
+                <a href="gallery.html#videoGames">Video Games</a>
+                <a href="gallery.html#customGames">Custom Games</a>
+            </div>
+     </li>
+     <li id="liNavbar"><a href="features.html">Features</a></li>	
+     <li id="liNavbar"><a href="pricing.html">Pricing</a></li>
+        <li id="liNavbar"><a href="team.htm">Team</a></li>	
+     
+    </ul>
+
+</div>
+
+<a name="top"></a>
+
+
+<center>
+	<div id="pageStart">
+        
+    </div>
+	<h1>Gallery</h1>
+	<h2>Virtual Reality</h2>
+    <p>Check out how Texturia can help improve your VR Experiences!</p><br><br>
+    
+    <div id="darkBack">
+        <h3 class="">Roller Coaster Rides</h3>
+    
+        <table>
+            <tr>
+                <td><img id="galleryImg" src="Images/gallery1a.jpg"></td>
+                <td><img id="galleryImg" src="Images/gallery1b.jpg"></td>
+            </tr>
+            <tr>
+                <td id="tdDark">
+                    <center>Typical Gaming Experience</center>
+                </td>
+                <td id="tdDark">
+                    <center>Texturia-improved Gaming Experience</center>
+                </td>
+            </tr>
+        </table>
+    
+        <p>The actual texture of a roller-coaster ride, right before your eyes!</p>
+    </div> 
+
+    
+    <div class="gallerySection" id="lightBack">
+        <h3 class="">Roller Coaster Rides</h3>
+    
+        <table>
+            <tr>
+                <td><img id="galleryImg" src="Images/gallery2a.png"></td>
+                <td><img id="galleryImg" src="Images/gallery2b.jpg"></td>
+            </tr>
+            <tr>
+                <td id="tdLight">
+                    <center>Typical Gaming Experience</center>
+                </td>
+                <td id="tdLight">
+                    <center>Texturia-improved Gaming Experience</center>
+                </td>
+            </tr>
+        </table>
+            
+		<p>Play VR games truly immersed in the texture of the scenery surrounding you</p>
+    </div>
+    
+    <div class="gallerySection" id="darkBack">
+		<h3 class="">VR Games</h3>
+        
+            <table>
+                <tr>
+                    <td><img id="galleryImg" src="Images/gallery3a.png"></td>
+                    <td><img id="galleryImg" src="Images/gallery3b.jpeg"></td>
+                </tr>
+                <tr>
+                    <td id="tdDark" ><center>Typical Gaming Experience</center></td>
+                    <td id="tdDark"><center>Texturia-improved Gaming Experience</center></td>
+                </tr>
+            </table>
+         <a name="videoGames"></a> 
+		<p>Play VR games absorbed by the textures of the room you're exploring</p>
+    </div>
+    
+
+	<div class="gallerySection" id="lightBack">
+        <a name="videoGames"></a>
+		<h3 class="">Video Games</h3>
+            <table>
+                <tr>
+                    <td><img id="galleryImg" src="Images/street2.jpg"></td>
+                    <td><img id="galleryImg" src="Images/street.jpg"></td>
+                </tr>
+                <tr>
+                    <td id="tdLight"><center>Typical Gaming Experience</center></td>
+                    <td id="tdLight"><center>Texturia-improved Gaming Experience</center></td>
+                </tr>
+            </table>
+        <a name="customGames"></a>
+        <p>Create games that take the player right onto the street where the action is!</p>
+
+    </div>
+    
+    <div class="gallerySection" id="darkBack">
+        <a name="customGames"></a>
+		<h2 class="">Create your Texturia-improved video game, no matter what you envision!</h3><br>
+            <div id="setText"> Imagine... a flat terrain abounding with grass </div><br>
+            <div id="setImage">  </div>
+    </div>
+
+    <button onclick="openFeatures()">SEE FEATURES</button>
+
+	<br><br><br>
+	</div>
+	
+</center>
+	<br><br><br>
+    
+        
+<br><br><br><br><br>
+
+
+<script type="text/javascript" src="Gallery.js"></script>
+<script>
+    function openFeatures(){
+        window.open(
+        "Features.html",
+        "_blank"
+	    )	
+    }
+    
+</script>
+
+
+</body>
+
+
+
+<footer>
+    <p> © 2020 Texturia. All right reserved. <br> Texturia and the Texturia logo are registered trademarks of Texturia. <br>
+        <a id="copyright" href="Terms of Use.pdf" target="_blank">Terms of Use</a>  <a id="copyright" href="Privacy Policy.pdf" target="_blank">Privacy Policy.</a> </p>
+</footer>
+
+</html>
